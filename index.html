@@ -5,69 +5,363 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Icons -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
 
-    <title>David Hatley Portfolio</title>
-</head> 
+    <title>David Hatley's Portfolio Website</title>
+</head>
 
 <body>
+
+    <canvas id="bg"></canvas>
+
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo">David</a>
+            <a href="#" class="nav__logo">David Hatley</a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link">
-                            <i class="uil uil-estate nav__icon"></i> Home
+                        <a href="#home" class="nav__link active-link">
+                            <i class="uil uil-estate nav__icon"></i>Home
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#about" class="nav__link">
-                            <i class="uil uil-user nav__icon"></i> About
+                        <a href="#projects" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i>Projects
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#skills" class="nav__link">
-                            <i class="uil uil-file-alt nav__icon"></i> Skills
+                        <a href="#experience" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i>Experience
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#services" class="nav__link">
-                            <i class="uil uil-briefcase-alt nav__icon"></i> Services
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#portfolio"  class="nav__link">
-                            <i class="uil uil-scenery nav__icon"></i> Portfolio
-                        </a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#contact"  class="nav__link">
-                            <i class="uil uil-message nav__icon"></i> Contact Me
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i>Contact
                         </a>
                     </li>
                 </ul>
-                <i class="uil uil-times nav__close" id="nav__close"></i>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+
             </div>
 
             <div class="nav__btns">
+
                 <div class="nav__toggle" id="nav-toggle">
-                    <i class="uil uil-apps"></i>
+                    <i class="uil uil-apps"> </i>
+
                 </div>
             </div>
         </nav>
     </header>
 
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="http://linkedin.com/" target="_blank" class="home__social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="http://github.com" target="_blank" class="home__social-icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                    </div>
 
+                    <div class="home__animation">
+                    </div>
 
+                    <div class="home__data">
+                        <h1 class="home__title">Hi, I'm David Hatley</h1>
+                        <h3 class="home__subtitle">Development, Data & Design</h3>
+                        <p class="home__description">Humbly seeking knowledge and experience in the domains of software
+                            development and data science.</p>
+                        <div class="home__buttons">
+                            <a href="#contact" class="button button-flex">
+                                Contact Me <i class="uil uil-message button__icon"></i>
+                            </a>
+                            <a download="" href="assets/pdf/DavidHatleyResume.pdf" class="button button--flex">
+                                Resume<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
 
+        <section class="projects section" id="projects">
+
+            <h2 class="section__title">Recent Projects</h2>
+            <span class="section__subtitle">Most recent works</span>
+
+            <div class="projects__container container">
+                <div class="swiper-wrapper">
+                    <!-- Project 1 -->
+
+                    <div class="projects__content grid">
+                        <img src="assets/img/projects1.jpg" alt="" class="projects__img">
+
+                        <div class="projects_">
+                            <h3 class="projects__title">Full Stack React Application</h3>
+                            <p class="projects__description">Website adaptable to all devices,
+                                with ui components and animated interactions.</p>
+                            <div class="projects__techstack">
+                                <p class="projects__tech html">HTML5</p>
+                                <p class="projects__tech css">CSS3</p>
+                                <p class="projects__tech js">JavaScript</p>
+                                <p class="projects__tech react">React</p>
+                            </div>
+                            <a href="#" class="button button--flex button--small projects__button">
+                                Demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+
+                    <div class="projects__content grid">
+                        <img src="assets/img/projects2.jpg" alt="" class="projects__img">
+
+                        <div class="projects_">
+                            <h3 class="projects__title">Histopathic Image Classification</h3>
+                            <p class="projects__description">Website adaptable to all devices, with
+                                ui components and animated interactions.</p>
+                            <a href="#" class="button button--flex button--small projects__button">
+                                Demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+
+                    <div class="projects__content grid">
+                        <img src="assets/img/projects3.jpg" alt="" class="projects__img">
+
+                        <div class="projects_">
+                            <h3 class="projects__title">Portfolio Website</h3>
+                            <p class="projects__description">Website adaptable to all devices, with
+                                ui components and animated interactions.</p>
+                            <a href="#" class="button button--flex button--small projects__button">
+                                Demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="experience__section" id="experience">
+            <h2 class="section__title">Experience</h2>
+            <span class="section__subtitle">My personal journey</span>
+
+            <div class="experience__container container">
+                <div class="experience__tabs">
+                    <div class="experience__button button--flex experience__active" data-target='#education'>
+                        <i class="uil uil-graduation-cap experience__icon"></i>
+                        Education
+                    </div>
+
+                    <div class="experience__button button--flex" data-target="#work">
+                        <i class="uil uil-briefcase-alt experience__icon"></i>
+                        Work
+                    </div>
+                </div>
+
+                <div class="experience__sections">
+                    <!-- Experience Content 1 -->
+                    <div class="experience__content experience__active" data-content id="education">
+                        <!-- Experience 1 -->
+                        <div class="experience__data">
+                            <div>
+                                <h3 class="experience__title">Physics and Mathematics</h3>
+                                <span class="experience__subtitle">University of New Mexico</span>
+                                <div class="experience__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2014 - 2019
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                        </div>
+
+                        <!-- Experience 2 -->
+                        <div class="experience__data">
+                            <div></div>
+                            <div>
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="experience__title">Data Science</h3>
+                                <span class="experience__subtitle">Self Taught</span>
+                                <div class="experience__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2019 - Present
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Experience 3 -->
+                        <div class="experience__data">
+                            <div>
+                                <h3 class="experience__title">Full Stack Web Development</h3>
+                                <span class="experience__subtitle">FreeCodeCamp</span>
+                                <div class="experience__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2020 - Present
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="experience__rounder"></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Experience Content 2 -->
+                    <div class="experience__content" data-content id="work">
+                        <!-- Experience 1 -->
+                        <div class="experience__data">
+                            <div>
+                                <h3 class="experience__title">Quantum Optics Laboratory Intern</h3>
+                                <span class="experience__subtitle">UNM Center for High Technology Materials</span>
+                                <div class="experience__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2014 - 2016
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                        </div>
+
+                        <!-- Experience 2 -->
+                        <div class="experience__data">
+                            <div></div>
+                            <div>
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="experience__title">Laboratory Technition</h3>
+                                <span class="experience__subtitle">Integra Technologies</span>
+                                <div class="experience__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2018 - 2020
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Experience 3 -->
+                        <div class="experience__data">
+                            <div>
+                                <h3 class="experience__title">Painting, Drywall & Doordash Delivery</h3>
+                                <span class="experience__subtitle">Contract Work</span>
+                                <div class="experience__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2020 - Present
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="experience__rounder"></span>
+                                <!-- <span class="experience__line"></span> -->
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact me</h2>
+            <span class="section__subtitle">Get in touch</span>
+
+            <div class="contact__container container">
+                <div class="contact__information">
+                    <i class="uil uil-phone-alt contact__icon"></i>
+
+                    <div>
+                        <h3 class="contact__title">Call me</h3>
+                        <a href="tel:+15053078972" class="contact__subtitle">+1 (505) 307-8972</a>
+                    </div>
+                </div>
+
+                <div class="contact__information">
+                    <i class="uil uil-envelope contact__icon"></i>
+
+                    <div>
+                        <h3 class="contact__title">E-mail</h3>
+                        <a href="mailto:davidhatley@me.com" class="contact__subtitle">davidhatley@me.com</a>
+                    </div>
+                </div>
+
+                <div class="contact__information">
+                    <i class="uil uil-map-marker contact__icon"></i>
+
+                    <div>
+                        <h3 class="contact__title">Location</h3>
+                        <span class="contact__subtitle">Albuquerque, New Mexico, USA</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">David Hatley</h1>
+                    <span class="footer__subtitle">Development, Data & Design</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#projects" class="footer__link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#experience" class="footer__link">Experience</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/three.js"></script>
 </body>
 
- </html>
+</html>
